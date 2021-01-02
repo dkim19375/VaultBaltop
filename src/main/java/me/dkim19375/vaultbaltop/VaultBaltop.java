@@ -2,8 +2,8 @@ package me.dkim19375.vaultbaltop;
 
 import me.dkim19375.dkim19375core.CoreJavaPlugin;
 import me.dkim19375.vaultbaltop.api.BaltopAPIProvider;
-import me.dkim19375.vaultbaltop.api.impl.VaultBaltopAPI;
-import me.dkim19375.vaultbaltop.api.interf.IBaltop;
+import me.dkim19375.vaultbaltop.api.interf.VaultBaltopAPI;
+import me.dkim19375.vaultbaltop.api.impl.IBaltop;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -22,8 +22,8 @@ public class VaultBaltop extends CoreJavaPlugin {
         if (!b) {
             Bukkit.getLogger().log(Level.SEVERE, "Cannot setup economy!!");
         }
-/*        getCommand("vaultbaltop").setExecutor(new CommandToTest());
-        getCommand("vb").setExecutor(new CommandToTest());*/
+        getCommand("vaultbaltop").setExecutor(new CommandToTest());
+        getCommand("vb").setExecutor(new CommandToTest());
     }
 
     @Override

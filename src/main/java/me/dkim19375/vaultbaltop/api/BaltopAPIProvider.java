@@ -1,7 +1,7 @@
 package me.dkim19375.vaultbaltop.api;
 
 import me.dkim19375.vaultbaltop.VaultBaltop;
-import me.dkim19375.vaultbaltop.api.impl.VaultBaltopAPI;
+import me.dkim19375.vaultbaltop.api.interf.VaultBaltopAPI;
 import net.milkbowl.vault.economy.Economy;
 
 public class BaltopAPIProvider {

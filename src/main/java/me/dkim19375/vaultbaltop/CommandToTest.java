@@ -7,38 +7,29 @@ import org.bukkit.command.CommandSender;
 public class CommandToTest implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-/*        if (args.length < 1) return false;
+ /*       if (args.length < 1) return false;
         VaultBaltopAPI api = BaltopAPIProvider.getAPI();
         switch (args[0].toLowerCase()) {
-            case "baltop":
-                sender.sendMessage("Baltop: " + api.getBaltop());
-                return true;
-            case "ranking":
+            case "getplayer":
                 sender.sendMessage("Ranking: " + api.getPlayer(Integer.parseInt(args[1])));
                 return true;
-            case "balance":
-                if (args.length == 2) {
-                    Double d = api.getBalance(PlayerUtils.getFromAll(args[1]));
-                    if (d == null) {
-                        sender.sendMessage("NULL");
-                        return false;
-                    }
-                    sender.sendMessage("Balance: " + d);
-                    return true;
-                }
-                Double d = api.getBalance(((Player) sender).getUniqueId());
-                if (d == null) {
-                    sender.sendMessage("NULL");
-                    return false;
-                }
-                sender.sendMessage("Balance: " + d);
+            case "baltop":
+                case "uuid": sender.sendMessage("Baltop: " + api.getBaltop());
                 return true;
-            case "offlineplayers":
-                sender.sendMessage("OfflinePlayers: " + Arrays.toString(Bukkit.getOfflinePlayers()));
+            case "getuuidlb":
+                sender.sendMessage("UUID ranking: " + Arrays.toString(api.getUUIDLeaderboard()));
+                return true;
+            case "getplayerlb":
+                sender.sendMessage("Player ranking: " + Arrays.toString(api.getPlayerLeaderboard()));
+                return true;
+            case "getbalancelb":
+                sender.sendMessage("Balance ranking: " + Arrays.toString(api.getBalanceLeaderboard()));
                 return true;
             case "default":
+                sender.sendMessage("Invalid argument");
                 return false;
-        }*/
+        }
+        sender.sendMessage("error");*/
         return false;
     }
 }

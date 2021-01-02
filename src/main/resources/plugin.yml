@@ -5,9 +5,3 @@ description: Vault Baltop
 author: dkim19375
 api-version: 1.13
 depend: [Vault]
-commands:
-  vaultbaltop:
-    aliases:
-      - vb
-    description: Main command
-    usage: /vaultbaltop [baltop|ranking <rank>|balance <player>|offlineplayers]
